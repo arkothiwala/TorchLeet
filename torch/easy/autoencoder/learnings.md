@@ -6,4 +6,4 @@
 
 2. **`Upsampling + Conv2D`** v/s **`ConvTranspose2D`** choice depends on the application
 
-3. 
+3. batch normalization didn't significantly improve the loss. However it is not supposed to help reduce the loss directly. It is supposed to make the loss plot more smoother which it did infact. Need to log it all in the wandb experiments so that it can be compared.
