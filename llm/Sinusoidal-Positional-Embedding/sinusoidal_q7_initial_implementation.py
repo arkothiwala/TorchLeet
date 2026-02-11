@@ -6,10 +6,10 @@ class SinusoidalPositionalEmbeddings(torch.nn.Module):
         self.n_dim = n_dim
 
     def get_sine_wave(self, idx):
-        return np.sin(idx/(10000**(np.arange(self.n_dim)/self.n_dim)))
+        return np.sin(idx/(10000**(np.arange(0,self.n_dim,2).reshape(1,-1)/self.n_dim)))
 
     def get_cos_wave(self, idx):
-        return np.cos(idx/(10000**(np.arange(self.n_dim)/self.n_dim)))
+        return np.cos(idx/(10000**(np.arange(0,self.n_dim,2).reshape(1,-1)/self.n_dim)))
 
     # INITIAL FAULTY IMPLEMENTATION
     # def forward(self, idx):
@@ -26,7 +26,7 @@ class SinusoidalPositionalEmbeddings(torch.nn.Module):
 
     def forward(self, seq_len):
         output = np.zeros(shape=(seq_len, self.n_dim))
-        idx = np.arange(start=0, stop=seq_len+1, step=2) # incrementing stop by 1 to cover odd sequence lengthes which would have been dropped due to stop=2
+        idx = np.arange(start=0, stop=seq_len, step=1).reshape(-1,1)
         output[:,::2] = self.get_sine_wave(idx)
         output[:,1::2] = self.get_cos_wave(idx)
-        return output[:, :seq_len]
+        return output[:seq_len, :]
