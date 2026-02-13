@@ -15,6 +15,32 @@ This document records:
 * The conceptual learnings gained
 
 ---
+# TLDR
+- tried to implement myself and made a fundamental mistake as discussed below
+- continuously made mistakes b/w timestamps and frequency dimensions repeadly
+- created issues related to dimensionality [i.e. creating 1D vectors for timestamp and frequency -> later reshaped to (-1,1) and (1,-1) so that they it could return (time_stamps, model_dim) shape] -> This was due to the kind of choice I had made to create different functions [for scaler input] and then improving them to handle vectorized input -> could have thought from tensor angle from the beginning.
+
+
+---
+
+# The Clock Analogy
+
+<strike>
+
+- We can apply clock analogy with the sinusoidal position embeddings in following way:
+    - clock time representation - 13:04:25
+    - 6d vector [i.e. [1,3,0,4,2,5]] essentially represent 3 clocks rotating at three different frequency [hour, minute, second]
+    - dials
+        - eqn - $10000**(-2*i/n_dim)$
+            - here the progression increments the dial speed in arithmetic progression
+        - clock's equivalent eq - 60**i [hour, minute, second]
+            - here the progression is more like geometrical one
+        - i's progression determines relative speed b/w dials. In the eqn the speed changes gradually among the dials. For clock it is massive and direct multiple of 60.
+    - base
+        - eqn - 10000
+        - clock - I don't know but it appears how much does the clock move when hour increments by an hour - I am confused here because when hour moved by 1 -> minute and second will be on the same position anyway -> this is not happening in the sinusoidal positional encoding -> there the increment is subtle
+</strike>
+---
 
 # The Initial Mistake
 
