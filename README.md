@@ -60,7 +60,7 @@ Recommended for those who have a basic understanding of PyTorch and want to prac
 2. [Implement an RNN from Scratch](torch/easy/rnn/RNN.ipynb) [(Solution)](torch/easy/rnn/RNN_SOLN.ipynb)  
 3. [Use `torchvision.transforms` to apply data augmentation](torch/easy/augmentation/augmentation.ipynb) [(Solution)](torch/easy/augmentation/augmentation_SOLN.ipynb)  
 4. [Add a benchmark to your PyTorch code](torch/easy/benchmark/bench.ipynb) [(Solution)](torch/easy/benchmark/bench_SOLN.ipynb)  
-5. [Train an autoencoder for anomaly detection](torch/easy/autoencoder/autoencoder.ipynb) [(Solution)](torch/easy/autoencoder/autoencoder_SOLN.ipynb)
+5. **[DONE]** [Train an autoencoder for anomaly detection](torch/easy/autoencoder/autoencoder.ipynb) [(Solution)](torch/easy/autoencoder/autoencoder_SOLN.ipynb)
 6. [Quantize your language model](torch/easy/quantize-lm/quantize-language-model.ipynb) [(Solution)](torch/easy/quantize-lm/quantize-language-model_SOLN.ipynb)
 7. [Implement Mixed Precision Training using torch.cuda.amp](torch/easy/cuda-amp/cuda-amp.ipynb) [(Solution)](torch/easy/cuda-amp/cuda-amp_SOLN.ipynb)
    
@@ -105,15 +105,15 @@ Each question is designed to take you one step closer to building your own LLM.
 
 1. Implement KL Divergence Loss
 2. Implement RMS Norm
-3. [Implement Byte Pair Encoding from Scratch](llm/Byte-Pair-Encoder/BPE-q3.ipynb) [(Solution)](llm/Byte-Pair-Encoder/BPE-q3.ipynb)
+3. **[DONE]** [Implement Byte Pair Encoding from Scratch](llm/Byte-Pair-Encoder/BPE-q3.ipynb) [(Solution)](llm/Byte-Pair-Encoder/BPE-q3.ipynb)
 4. Create a RAG Search of Embeddings from a set of Reviews
 5. Implement Predictive Prefill with Speculative Decoding
-6. [Implement Attention from Scratch](llm/Implement-Attention-from-Scratch/attention-q4-Question.ipynb) [(Solution)](llm/Implement-Attention-from-Scratch/attention-q4.ipynb)
-7. [Implement Multi-Head Attention from Scratch](llm/Multi-Head-Attention/multi-head-attention-q5-Question.ipynb) [(Solution)](llm/Multi-Head-Attention/multi-head-attention-q5.ipynb)
-8. [Implement Grouped Query Attention from Scratch](llm/Grouped-Query-Attention/grouped-query-attention-Question.ipynb) [(Solution)](llm/Grouped-Query-Attention/grouped-query-attention.ipynb)
+6. **[DONE]** [Implement Attention from Scratch](llm/Implement-Attention-from-Scratch/attention-q4-Question.ipynb) [(Solution)](llm/Implement-Attention-from-Scratch/attention-q4.ipynb)
+7. **[DONE]** [Implement Multi-Head Attention from Scratch](llm/Multi-Head-Attention/multi-head-attention-q5-Question.ipynb) [(Solution)](llm/Multi-Head-Attention/multi-head-attention-q5.ipynb)
+8. **[WIP]**  [Implement Grouped Query Attention from Scratch](llm/Grouped-Query-Attention/grouped-query-attention-Question.ipynb) [(Solution)](llm/Grouped-Query-Attention/grouped-query-attention.ipynb)
 9. Implement KV Cache in Multi-Head Attention from Scratch
-10. [Implement Sinusoidal Embeddings](llm/Sinusoidal-Positional-Embedding/sinusoidal-q7-Question.ipynb) [(Solution)](llm/Sinusoidal-Positional-Embedding/sinusoidal-q7.ipynb)
-11. [Implement ROPE Embeddings](llm/Rotary-Positional-Embedding/rope-q8-Question.ipynb) [(Solution)](llm/Rotary-Positional-Embedding/rope-q8.ipynb)
+10. **[DONE]** [Implement Sinusoidal Embeddings](llm/Sinusoidal-Positional-Embedding/sinusoidal-q7-Question.ipynb) [(Solution)](llm/Sinusoidal-Positional-Embedding/sinusoidal-q7.ipynb)
+11. **[DONE]** [Implement ROPE Embeddings](llm/Rotary-Positional-Embedding/rope-q8-Question.ipynb) [(Solution)](llm/Rotary-Positional-Embedding/rope-q8.ipynb)
 12. [Implement SmolLM from Scratch](llm/SmolLM/smollm-q12-Question.ipynb) [(Solution)](llm/SmolLM/smollm-q12.ipynb)
 13. Implement Quantization of Models
     1.  GPTQ
