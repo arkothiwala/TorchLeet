@@ -1,3 +1,4 @@
+import torch
 def apply_rotary_pos_emb(x):
     # (..., seq_len, n_dim)
     n_dim, seq_len = x.shape[-1], x.shape[-2]
