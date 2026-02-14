@@ -1,3 +1,3 @@
 - I didn't do interleave for K and V metrics.
 - I confused number of heads with sequence length and it failed.
-- This is implemented using MHA eq but pytorch implements at scaled dot product attention level
+- **This is implemented using MHA eq but pytorch implements at scaled dot product attention level**
